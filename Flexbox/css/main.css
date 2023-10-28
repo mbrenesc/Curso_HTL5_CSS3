@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-align: justify;
+}
+
+body{
+    background-color: #f7f7f7;
+    margin: 20px;
+}
+
+.container{
+    margin: auto;
+    max-width: 1200px;
+    width: 90%;
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+header, footer{
+    background-color: gold;
+    color: #ffffff;
+    padding: 1em;
+
+    align-items: center;
+    display: flex;
+    flex-basis: 100%;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+header nav{
+    background-color: tomato;
+    padding: 1em;
+    text-align: center;
+
+    flex-basis: 38.5%;
+}
+
+header nav a{
+    color: #ffffff;
+    padding: 1em;
+    text-transform: uppercase;
+
+    justify-content: space-around;
+}
+
+header nav a:hover{
+    background-color: goldenrod;
+}
+
+section{
+    background-color: #ffffff;
+    padding: 1.5em;
+
+    flex: 1 1 55%
+}
+
+
+section p, section hr, section h1{
+    margin-bottom: 1em;
+}
+
+section ul{
+    justify-content: space-between;
+}
+
+
+aside{
+    background-color: tomato;
+    text-align: justify;
+
+    flex: 1 1 45%;
+}
+
+aside ol{
+    background-color: gold;
+    margin: 1em;
+    padding: 1em;
+}
+
+aside h1{
+    text-align: center;
+}
+
+aside li{
+    margin-left: 10px;
+}
+
+footer{
+    padding: 1.5em;
+
+    justify-content: center;
+}
+
+@media (max-width: 760px){
+    .container{
+        flex-direction: column;
+    }
+    header{
+        margin: 0;
+        padding: 0;
+
+        justify-content: center;
+    }
+    header nav{
+        flex-basis: 100%;
+    }
+    h2{
+       padding: 1.5em 0; 
+    }
+}
